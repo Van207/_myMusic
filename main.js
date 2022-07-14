@@ -20,6 +20,7 @@ const volDownBtn = $('.btn-volume-down')
 const volumeRange = $('.volume-range')
 const volumeControl = $('.volume-control')
 
+
 const PLAYER_STORAGE_KEY = "MUSIC_PLAYER"
 
 const app = {
@@ -108,13 +109,22 @@ const app = {
                         <p class="author">${song.singer}</p>
                     </div>
                     <div class="option">
+                        <div id="wave-song" class="${index === this.currenIndex ? 'wave-song-active' : ''}">  
+                            <span></span>  
+                            <span></span>  
+                            <span></span>  
+                            <span></span>  
+                            <span></span>  
+                        </div>
                         <i class="fas fa-ellipsis-h"></i>
                     </div>
                 </div>
             `
         })
+        
         playlist.innerHTML = htmls.join("");
     },
+    
 
     defineProperties: function() {
         Object.defineProperty(this, "currentSong", {
