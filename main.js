@@ -116,7 +116,6 @@ const app = {
                             <span></span>  
                             <span></span>  
                         </div>
-                        <i class="fas fa-ellipsis-h"></i>
                     </div>
                 </div>
             `
